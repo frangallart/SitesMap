@@ -1,4 +1,7 @@
 package com.example.fran.sitesmap.Controllers;
+/**
+ * Created by Fran on 12/03/2015.
+ */
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -41,8 +44,6 @@ import java.util.ArrayList;
  * Classe MapsActivity
  * <p/>
  * Classe principal de la aplicació
- * <p/>
- * Created by Fran on 12/03/2015.
  */
 public class MapsActivity extends FragmentActivity implements OnClickListener, OnItemClickListener, OnMapLoadedCallback {
 
@@ -221,7 +222,7 @@ public class MapsActivity extends FragmentActivity implements OnClickListener, O
     }
 
     /**
-     * Mètode que controla levent onItemClick dels elements
+     * Mètode que controla l'event onItemClick dels elements
      *
      * @param parent
      * @param view
@@ -274,6 +275,7 @@ public class MapsActivity extends FragmentActivity implements OnClickListener, O
                     bounds.include(new LatLng(p.getLatitude(), p.getLongitude()));
                 }
                 centerBounds = bounds.build();
+                // Un cop carregat el mapa centrem la càmera segons els punts
                 mMap.setOnMapLoadedCallback(this);
             }
         }

@@ -1,11 +1,14 @@
 package com.example.fran.sitesmap.Models;
+/**
+ * Created by Fran on 12/03/2015.
+ */
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
  * Classe que modela les dades d'un punt en el mapa
- * Created by Fran on 06/03/2015.
+ * <p/>
  */
 public class MapPoint implements Parcelable {
     private int _id;

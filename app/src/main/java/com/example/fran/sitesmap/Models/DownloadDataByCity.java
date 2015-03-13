@@ -1,5 +1,4 @@
 package com.example.fran.sitesmap.Models;
-
 /**
  * Created by Fran on 12/03/2015.
  */
@@ -31,6 +30,7 @@ import java.util.List;
  */
 public class DownloadDataByCity extends AsyncTask<String, Void, ArrayList<MapPoint>> {
 
+    // Enllaç des de on es descarreguen les dades
     private static final String URL_DATA = "http://www.infobosccoma.net/pmdm/pois.php";
     private MapsActivity mapsActivity;
 
